@@ -16,3 +16,4 @@ public:
 	void setTipo(string tipo);
 	void setValor(int valor);
 	void setNumeroCarta(int numero);
+};
