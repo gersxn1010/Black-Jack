@@ -8,7 +8,7 @@ class Mazo
 {
 private:
 	vector<Carta>cartas;
-
+	 
 public:
 	Mazo();
 	void barajar();
