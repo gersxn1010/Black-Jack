@@ -11,7 +11,7 @@ private:
 
 public:
 
-	void agregarCarta(const Carta& carta);
+	void agregarCarta(const Carta& c);
 
 	int calcularValor();
 
@@ -23,6 +23,6 @@ public:
 
 	int cantidadCartas();
 
-	void mostrarCartas();
+	void mostrar();
 
 };
