@@ -1,5 +1,7 @@
 #pragma once
 #include <iostream>
+#include <vector>
+#include "Carta.h"
 
 using namespace std;
 
@@ -11,19 +13,21 @@ private:
 
 public:
 
+	Mano();
+
 	void agregarCarta(const Carta& c);
 
-	int calcularValor();
+	int calcularValor() const;
 
-	bool esBlackjack();
+	bool esBlackjack() const;
 
-	bool sePasa();
+	bool sePasa() const;
 
 	void limpiar();
 
-	int cantidadCartas();
+	int cantidadCartas() const;
 
-	void mostrar();
+	void mostrar() const;
 
 
 };
