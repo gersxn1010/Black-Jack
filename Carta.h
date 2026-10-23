@@ -1,8 +1,9 @@
 #pragma once
 #include <iostream>
 using namespace std;
-class Carta
-{
+
+
+class Carta{
 private:
 	string tipo;
 	int valor;
@@ -13,7 +14,6 @@ public:
 	string getTipo();
 	int getValor();
 	int getNumeroCarta();
-	void setTipo(string tipo);
-	void setValor(int valor);
-	void setNumeroCarta(int numero);
+	bool esAs();
+	string MostrarCarta();
 };
