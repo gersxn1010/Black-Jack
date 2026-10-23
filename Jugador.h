@@ -1,27 +1,26 @@
 #pragma once
 #include <iostream>
+#include <vector>
+#include <string>
+#include "Ficha.h"
 
 using namespace std;
 
 class Jugador {
-
-protect:
-mano:Mano;
-
 private:
-	int dinero;
+	vector<Ficha> fichas;
 	int apuestaActual;
-
+	bool plantado;
 public:
-
-	void apostarFicha();
-
-	void pedirCarta(c:Carta);
-
+	Jugador(string nombre, vector<Ficha> fichas);
+	bool quiereCarta() override;
+	bool puedeApostar(int monto);
+	bool apostarFicha(int indice);
+	bool doblarApuesta();
 	void plantarse();
-
-	void doblarApuesta();
-
-	Mano getMano();
-
+	//getters
+	int getDinero();
+	int getApuestaActual();
+	//fin de los getters
+	void nuevaRonda();
 };
