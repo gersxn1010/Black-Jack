@@ -5,10 +5,10 @@ Ficha::Ficha(int valor, string colorFicha) {
 	this->colorFicha = colorFicha;
 }
 
-int Ficha::getValor() {
+int Ficha::getValor() const {
 	return valor;
 }
 
-string getColorFicha() {
+string getColorFicha() const {
 	return colorFicha;
 }
